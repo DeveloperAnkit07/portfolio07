@@ -55,7 +55,4 @@ if (skills.length > 0) {
 }
 
 
-  skills.forEach((skill) => observer.observe(skill));
-}
-
 
