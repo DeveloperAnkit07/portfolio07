@@ -129,14 +129,20 @@
     method="POST"
     id="contact-form"
     class="contact-form"
-    autocomplete="off"
   >
     <div class="form-row">
       <input type="text" name="name" id="name" placeholder="Your name" required>
       <input type="email" name="email" id="email" placeholder="Your email" required>
     </div>
+
     <textarea name="message" id="message" rows="5" placeholder="Your message" required></textarea>
+
+    <!-- Formspree recommended hidden key -->
+    <input type="hidden" name="_subject" value="New Contact Form Submission!">
+    <input type="hidden" name="_captcha" value="false">
+
     <button type="submit" class="btn">Send</button>
+
     <p id="form-msg" class="form-msg"></p>
   </form>
 </section>
@@ -159,3 +165,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
