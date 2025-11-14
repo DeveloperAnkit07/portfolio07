@@ -331,3 +331,16 @@ textarea {
     display: none;
   }
 }
+/* Skills hidden before scroll */
+.skill {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s ease-in-out;
+}
+
+/* When visible */
+.skill.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
