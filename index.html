@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Developer Ankit | Frontend Developer Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <div class="brand">Developer Ankit</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero container">
+    <div class="hero-left">
+      <h3 class="intro">Hi, I'm <span class="name">Ankit 👋</span></h3>
+      <h1 class="hero-title">I'm a <span class="typing"></span></h1>
+      <p class="hero-sub">Building clean, responsive web experiences using HTML, CSS & JavaScript.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn">Hire Me</a>
+        <a href="#projects" class="btn outline">See Projects</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/frontend-developer-6333251-5239659.png"
+        alt="Developer Ankit" class="profile-img">
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-container">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Responsive Design</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">UI/UX Basics</div>
+  </div>
+</section>
+  <!-- ABOUT -->
+  <section id="about" class="section container about-section">
+    <div class="about-card">
+      <img class="about-img" src="https://cdn3d.iconscout.com/3d/premium/thumb/coding-boy-4561233-3779242.png"
+        alt="About Ankit">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm a Frontend Developer Learner passionate about crafting responsive and user-friendly web interfaces. I’m
+          exploring JavaScript deeply and love building small but functional projects that improve my skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h2 class="section-heading">Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-thumb">
+          <img src="https://via.placeholder.com/600x350?text=To-Do+List+App" alt="To-Do List App">
+        </div>
+        <div class="project-body">
+          <h3>To-Do List App</h3>
+          <p>A clean and responsive task management app that lets users add, edit, mark complete, and delete tasks — all
+            saved locally using LocalStorage.</p>
+          <div class="project-meta">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="projects/todo-list/index.html" target="_blank" class="btn small">View Project</a>
+
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-thumb">
+          <img src="https://via.placeholder.com/600x350?text=Weather+App" alt="Weather App">
+        </div>
+        <div class="project-body">
+          <h3>Weather App</h3>
+          <p>A responsive weather application that shows real-time temperature, humidity, and condition updates using
+            the OpenWeather API with a modern UI design.</p>
+          <div class="project-meta">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="projects/weather-app/index.html" target="_blank" class="btn small">View Project</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+<!-- CONTACT -->
+<section id="contact" class="section container contact-section">
+  <h2 class="section-heading">Send Me a Message</h2>
+
+  <!-- Formspree connected form -->
+  <form
+    action="https://formspree.io/f/mnnlnakw"
+    method="POST"
+    id="contact-form"
+    class="contact-form"
+    autocomplete="off"
+  >
+    <div class="form-row">
+      <input type="text" name="name" id="name" placeholder="Your name" required>
+      <input type="email" name="email" id="email" placeholder="Your email" required>
+    </div>
+    <textarea name="message" id="message" rows="5" placeholder="Your message" required></textarea>
+    <button type="submit" class="btn">Send</button>
+    <p id="form-msg" class="form-msg"></p>
+  </form>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <h2 class="footer-title">Let's work together</h2>
+      <p class="footer-email">ankitdevx.26@gmail.com</p>
+      <div class="footer-socials">
+        <a href="https://instagram.com/heyy_ankit_07" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/AnkitKumar61424" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://linkedin.com/in/ankit0726" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="footer-copy">© 2025 Ankit Kumar | Built with ❤️ using HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

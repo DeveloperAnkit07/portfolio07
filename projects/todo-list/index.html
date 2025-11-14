@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List Ultimate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 To-Do List</h1>
+
+    <!-- Input -->
+    <div class="input-box">
+      <input type="text" id="task-input" placeholder="Add or edit task..." />
+      <button id="add-btn">Add</button>
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search task..." />
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list"></ul>
+    <p id="empty-msg">No tasks yet. Add one!</p>
+
+    <button id="clear-btn">🗑 Clear All</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
